@@ -10,22 +10,25 @@ def main():
     import random  
     
     list = []
-   
-    numbers_random = 5
     
     count = 0
     
-    count += 1
+    total = 0
     
-    while  count < numbers_random:
+    while  count <5:
         numbers = random.randint(1,100)
         
         list.append(numbers)
+        
         print(f'The random values are {numbers}')
+        
+        total += numbers
+        
+        count += 1
 
-total = sum(list)
     
-print(f'The total is {total}')
+    
+    print(f'The total is {total}')
 
     ########################################
     # Do not delete the return statement
